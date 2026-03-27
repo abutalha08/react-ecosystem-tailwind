@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavLink from './NavLink';
+import { Menu, X } from 'lucide-react';
 
 
 
@@ -32,14 +33,33 @@ const navLinks = [
 ];
 
 const NavBar = () => {
+    const [open, setOpen] = useState(false);
+    const links = navLinks.map(route => <NavLink key={route.id} route = {route}></NavLink>);
     return (
-        <nav>
+        <nav className='flex justify-between bg-blue-600 mx-5 '>
+
+            <span className='flex relative cursor-pointer' onClick={()=> setOpen(!open)}>  {/*Here I do toggling*/}
+                {
+                open ? 
+                <X className='md:hidden'></X> : 
+                <Menu className='md:hidden'></Menu>
+                }
+                
+              <ul className={`md:hidden absolute left-0 top-full mt-1 w-44 overflow-hidden transition-all
+               duration-1000 ease-in-out text-black 
+                ${open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"} 
+                bg-amber-600 `}>
+                {links}
+              </ul>
+            <h2 className='ml-4 hidden md:block'>My Navbar</h2>
+            </span>
 
             {/* 3.Create external component and pass data to the NavLink component  */}
 
-            <ul className='flex bg-blue-600 gap-6 justify-center'>
+            <ul className='md:flex gap-6 hidden'>
                 {
-                navLinks.map(route => <NavLink key={route.id} route = {route}></NavLink>)
+                // navLinks.map(route => <NavLink key={route.id} route = {route}></NavLink>)
+                links
             }
             </ul>
 
@@ -62,6 +82,8 @@ const NavBar = () => {
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul> */}
+
+            <button>Sign In</button>
 
         </nav>
     );
