@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Plan",
+    "price": "$29 / month",
+    "description": "Perfect for beginners who want access to the gym facilities.",
+    "features": [
+      "Access to gym equipment",
+      "1 personal training session per month",
+      "Locker room access",
+      "Free Wi-Fi",
+      "Group classes not included"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Plan",
+    "price": "$49 / month",
+    "description": "Ideal for regular fitness enthusiasts who want more flexibility and classes.",
+    "features": [
+      "All Basic Plan features",
+      "Unlimited group classes (yoga, Zumba, HIIT)",
+      "2 personal training sessions per month",
+      "Access to sauna & steam room",
+      "Nutrition guidance"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Plan",
+    "price": "$79 / month",
+    "description": "For serious athletes or those wanting full access and premium services.",
+    "features": [
+      "All Standard Plan features",
+      "Unlimited personal training sessions",
+      "Access to premium equipment & VIP lounge",
+      "Free guest passes (2 per month)",
+      "Priority booking for classes and events",
+      "Personalized nutrition plan"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Annual VIP Plan",
+    "price": "$799 / year (save $149!)",
+    "description": "Complete fitness experience for a full year with exclusive perks.",
+    "features": [
+      "All Premium Plan features",
+      "24/7 gym access",
+      "Exclusive workshops and events",
+      "Monthly health check-ups",
+      "VIP support and personal fitness tracking",
+      "Free merchandise pack"
+    ]
+  }
+]
