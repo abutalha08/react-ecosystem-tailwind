@@ -2,7 +2,7 @@ import React from 'react';
 import PricingFeatures from './PricingFeatures';
 
 const PricingCard = ({pricing}) => {
-    console.log(pricing);
+    // console.log(pricing);
     const {name,price,description,features} = pricing;
     return (
         <div className='flex flex-col border border-blue-800 rounded-2xl p-4 text-black space-y-8 bg-blue-300'>

@@ -16,7 +16,7 @@ const gymData = [
 
 const ResultsBarChart = () => {
     return (
-        <div className="w-full h-96 mt-30">
+        <div className="w-full h-96 mt-28">
             <h2 className="text-xl font-bold text-center mb-4">
                 📊 Gym Performance Bar Chart
             </h2>
